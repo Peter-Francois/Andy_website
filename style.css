@@ -1,0 +1,217 @@
+:root{
+    --color_title:#00274f;
+    --color_action_button: #FF6600;
+
+}
+
+body{
+
+    font-family: 'Open sans';
+    margin: 0px;
+    line-height: 1.5;
+    color: #333333;
+}
+div.cover{
+    background: url('images/tableau_elec.jpeg') no-repeat center/cover;
+    text-align: center;
+    height: 260px;
+    position: relative;
+
+}
+div.cover::before{
+    content:'';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.585);
+    z-index: 1;
+}
+h1{
+    color: var(--color_title);
+    font-size: 55px;
+    text-shadow: rgb(91, 91, 91) 0.1em 0.1em 0.15em;
+    font-family: Montserrat;
+    position: relative;
+    margin: 0;
+    padding-top: 35px;
+
+    z-index: 2;
+}
+h2{
+
+    color: var(--color_title);
+    font-size: 30px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+    text-shadow: rgb(91, 91, 91) 0.05em 0.05em 0.25em;
+    font-family: Montserrat;
+
+}
+h3{
+    color: var(--color_title);
+    font-size: 20px;
+    text-shadow: rgb(91, 91, 91) 0.1em 0.1em 0.2em;
+    font-family: Montserrat;
+    margin-bottom: 10px;
+
+}
+
+.logo_danger_electricite{
+    height: 50px;
+    position: relative;
+    z-index: 2;
+
+}
+p.description{
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: rgb(91, 91, 91) 0.1em 0.1em 0.23em;
+    color: var(--color_title);
+    z-index: 2;
+}
+a.button{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    color: var(--color_action_button);
+    border:solid 3px var(--color_action_button) ;
+    padding: 5px 18px;
+    background-color: #000000a2;
+
+}
+a.button:hover{
+    border: solid 3px var(--color_title);
+    color:var(--color_title);
+    background-color: #00000056;
+}
+.center{
+    text-align: center;
+}
+
+.separateur{
+    background-color: #979797;
+    height:2px;
+    width: 150px;
+    position:relative;
+    left:50%;
+    margin-left:-75px ;
+
+}
+.section{
+    overflow:auto;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+.partie_grise{
+    background-color: #F5F5F5;
+    
+}
+div.texte-avec-ligne-verticale{
+    border-left: 3px solid var(--color_action_button);
+    padding-left: 8px;
+    height: 50px;
+    display: inline-block;
+    width: 100%;
+
+
+}
+
+div.col_contenu {
+    width: 80%;
+    margin-left: 0;
+    box-sizing: border-box;
+
+}
+.patie_blanche p{
+    font-size: 18px;
+    margin-top: 0;
+    max-width: 85%;
+}
+
+.lightbulb{
+    width: 15%;
+    min-width: 150px;
+
+
+
+}
+.float_right{
+    float: right;
+}
+
+
+.grid-container{
+    margin: auto;
+    padding: 15px;
+    display: grid;
+    gap: 25px;
+}
+.cover_container{
+    padding-top: 0;
+    grid-template-columns:  1fr 0.1fr 1.1fr 0.1fr 1fr;
+    grid-template-areas: ". cover_item1 cover_item2 cover_item3";
+}
+.container-know-how{   
+    gap: 15px;
+    max-width: 1100px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #00284fd0;
+    border-radius: 30px;
+    box-shadow: 15px 15px 5px grey;  
+}
+.container-about{
+    grid-template-columns: 0.6fr 1fr;
+    column-gap: 20px;
+}
+.grid_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#cover_item1{
+    grid-area: cover_item1;
+}
+#cover_item2{
+    grid-area: cover_item2;
+}
+#cover_item3{
+    grid-area: cover_item3;
+}
+.item_know_how{
+    overflow: hidden;
+    border: solid black 1px;
+    border-radius: 20px;
+    height: 200px; 
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(255, 255, 255); 
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.075em;
+}
+
+.grid_item_know_how:hover{
+    color: var(--color_action_button);
+    font-size: 60px;
+}
+#know_how_item1:hover{
+    background: url('images/tableau_elec_3.jpg') no-repeat center/cover;
+    
+}
+#know_how_item2:hover{
+    background: url('images/smart-home-logo.jpeg') no-repeat center;
+    background-size: 100% 100%;
+    
+}
+#know_how_item3:hover{
+    background: url('images/exterior.webp') no-repeat center/cover;
+}
+#know_how_item4:hover{
+    background: url('images/borne_IRVE.jpg') no-repeat center/cover;
+}
+
