@@ -11,14 +11,15 @@ body{
     line-height: 1.5;
     color: #333333;
 }
-div.cover{
+header{
     background: url('images/tableau_elec.jpeg') no-repeat center/cover;
     text-align: center;
     height: 260px;
     position: relative;
+    z-index: 1;
 
 }
-div.cover::before{
+header::before{
     content:'';
     top: 0;
     left: 0;
@@ -26,18 +27,70 @@ div.cover::before{
     height: 100%;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.585);
-    z-index: 1;
+    z-index: -1;
+}
+.compagny_name_and_menu{
+    display: grid;
+    grid-template-columns: .35fr 1fr;
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-content: flex-start;
+    background-color:#8f8f8f ;
+}
+.menu ul li {
+    flex-grow: 1;
+    position: relative; /* Nécessaire pour positionner les sous-menus */
+}
+.menu ul li a {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu ul li a:hover {
+    background-color: #555;
+}
+/* Styles pour les dropdown menus */
+ul.dropdown-menu {
+    display: none; /* Cacher par défaut */
+    position: absolute;
+    top: 100%; /* Juste en dessous du menu principal */
+    left: 0;
+    background-color: #444;
+    padding: 0;
+    min-width: 150px;
+    z-index: 10;
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    color: white;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #666;
+}
+  
+/* Afficher le dropdown au survol */
+.dropdown_savoir_faire:hover .dropdown-menu {
+    display: block;
 }
 h1{
     color: var(--color_title);
-    font-size: 55px;
+    font-size: 45px;
     text-shadow: rgb(91, 91, 91) 0.1em 0.1em 0.15em;
     font-family: Montserrat;
-    position: relative;
     margin: 0;
-    padding-top: 35px;
-
-    z-index: 2;
+    padding-top: 0px;
 }
 h2{
 
@@ -71,22 +124,6 @@ p.description{
     text-shadow: rgb(91, 91, 91) 0.1em 0.1em 0.23em;
     color: var(--color_title);
     z-index: 2;
-}
-a.button{
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    text-decoration: none;
-    color: var(--color_action_button);
-    border:solid 3px var(--color_action_button) ;
-    padding: 5px 18px;
-    background-color: #000000a2;
-
-}
-a.button:hover{
-    border: solid 3px var(--color_title);
-    color:var(--color_title);
-    background-color: #00000056;
 }
 .center{
     text-align: center;
