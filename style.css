@@ -1,6 +1,7 @@
 :root{
     --color_title:#00274f;
     --color_action_button: #FF6600;
+    --color_action_button_non_hover: #ff6600d8;
     --color_title_non_hover: #00458ab2;
 
 }
@@ -48,7 +49,6 @@ header:before{
 }
 .menu ul li {
     flex-grow: 1;
-    position: relative; /* Nécessaire pour positionner les sous-menus */
 }
 .menu ul li a {
     display: block;
@@ -60,34 +60,17 @@ header:before{
 .menu ul li a:hover {
     background-color: var(--color_title);
 }
-/* Styles pour les dropdown menus */
-ul.dropdown-menu {
-    display: none; /* Cacher par défaut */
-    position: absolute;
-    top: 100%; /* Juste en dessous du menu principal */
-    left: 0;
-    background-color: var(--color_title_non_hover);
-    padding: 0;
-    min-width: 150px;
-    z-index: 10;
-}
+#contact{
+    background-color: var(--color_action_button_non_hover);
+    font-weight: bold;
 
-.dropdown-menu li a {
-    padding: 10px 15px;
-    color: white;
 }
-
-.dropdown-menu li a:hover {
-    background-color: #666;
-}
-  
-/* Afficher le dropdown au survol */
-.dropdown_savoir_faire:hover .dropdown-menu {
-    display: block;
+#contact:hover{
+    background-color: var(--color_action_button);
 }
 h1{
     color:white;
-    line-height: 1.3;
+    line-height: 1.35;
     background-color: var(--color_title_non_hover);
     font-size: 35px;
     height: 45px;
