@@ -1,6 +1,7 @@
 :root{
     --color_title:#00274f;
     --color_action_button: #FF6600;
+    --color_title_non_hover: #00458ab2;
 
 }
 
@@ -14,12 +15,12 @@ body{
 header{
     background: url('images/tableau_elec.jpeg') no-repeat center/cover;
     text-align: center;
-    height: 260px;
+    height: 210px;
     position: relative;
     z-index: 1;
 
 }
-header::before{
+header:before{
     content:'';
     top: 0;
     left: 0;
@@ -30,8 +31,11 @@ header::before{
     z-index: -1;
 }
 .compagny_name_and_menu{
-    display: grid;
-    grid-template-columns: .35fr 1fr;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    grid-template-columns: .4fr 1fr;
 }
 .menu ul{
     list-style: none;
@@ -40,7 +44,7 @@ header::before{
     box-sizing: border-box;
     display: flex;
     align-content: flex-start;
-    background-color:#8f8f8f ;
+    background-color:var(--color_title_non_hover) ;
 }
 .menu ul li {
     flex-grow: 1;
@@ -48,16 +52,13 @@ header::before{
 }
 .menu ul li a {
     display: block;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding: 7.5px 10px;
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
 .menu ul li a:hover {
-    background-color: #555;
+    background-color: var(--color_title);
 }
 /* Styles pour les dropdown menus */
 ul.dropdown-menu {
@@ -65,7 +66,7 @@ ul.dropdown-menu {
     position: absolute;
     top: 100%; /* Juste en dessous du menu principal */
     left: 0;
-    background-color: #444;
+    background-color: var(--color_title_non_hover);
     padding: 0;
     min-width: 150px;
     z-index: 10;
@@ -85,12 +86,16 @@ ul.dropdown-menu {
     display: block;
 }
 h1{
-    color: var(--color_title);
-    font-size: 45px;
-    text-shadow: rgb(91, 91, 91) 0.1em 0.1em 0.15em;
+    color:white;
+    line-height: 1.3;
+    background-color: var(--color_title_non_hover);
+    font-size: 35px;
+    height: 45px;
+    text-shadow: var(--color_title) 0.1em 0.1em 0.15em;
     font-family: Montserrat;
     margin: 0;
-    padding-top: 0px;
+    padding: 0;
+    box-sizing: border-box;
 }
 h2{
 
@@ -184,13 +189,13 @@ div.col_contenu {
 
 
 .grid-container{
-    margin: auto;
-    padding: 15px;
     display: grid;
-    gap: 25px;
 }
+
 .cover_container{
-    padding-top: 0;
+    padding-top: 100px;
+
+    gap: 25px;
     grid-template-columns:  1fr 0.1fr 1.1fr 0.1fr 1fr;
     grid-template-areas: ". cover_item1 cover_item2 cover_item3";
 }
@@ -201,10 +206,15 @@ div.col_contenu {
     background-color: #00284fd0;
     border-radius: 30px;
     box-shadow: 15px 15px 5px grey;  
+    margin: auto;
+    padding: 15px;
+
 }
 .container-about{
     grid-template-columns: 0.6fr 1fr;
     column-gap: 20px;
+    margin: auto;
+    padding: 15px;
 }
 .grid_item{
     display: flex;
