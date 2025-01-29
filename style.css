@@ -50,14 +50,16 @@ header:before{
 .menu ul li {
     flex-grow: 1;
 }
-.menu ul li a {
+.menu ul li button {
     display: block;
     padding: 7.5px 10px;
     color: white;
     text-decoration: none;
     font-size: 20px;
+    background-color: transparent;
+    border: none;
 }
-.menu ul li a:hover {
+.menu ul li button:hover {
     background-color: var(--color_title);
 }
 #contact{
@@ -133,7 +135,7 @@ p.description{
     padding-right: 40px;
     padding-bottom: 30px;
 }
-.partie_grise{
+.partie_grise_1, .partie_grise_2{
     background-color: #F5F5F5;
     
 }
@@ -153,7 +155,7 @@ div.col_contenu {
     box-sizing: border-box;
 
 }
-.patie_blanche p{
+.partie_blanche_1 p, .partie_blanche_2 p{
     font-size: 18px;
     margin-top: 0;
     max-width: 85%;

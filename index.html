@@ -17,9 +17,9 @@
             <h1>E L E C +</h1>
             <nav class="menu">
                 <ul>
-                    <li><a href="#" onclick="display_home()" id="home">Accueil</a></li>
-                    <li><a href="#" onclick="display_know_how()" id="know_how">Savoir faire</a></li>
-                    <li><a href="#" onclick="display_about()" id="about">A propos</a></li>
+                    <li><button onclick="displayHome(event)" id="home">Accueil</button></li>
+                    <li><button onclick="displayKnowHow(event)" id="know_how">Savoir faire</button></li>
+                    <li><button onclick="displayAbout(event)" id="about">A propos</button></li>
                     <li><a id="contact" href="/contact" >Contact<i style="margin-left: 15px;" class="fa-solid fa-arrow-pointer"></i></a></li>
                 </ul>
             </nav>
@@ -38,14 +38,14 @@
         </header>
 
     <!--Div de premiere partie grise-->
-    <div class="section partie_grise">
+    <div class="section partie_grise_1">
         <div class="separateur"></div>
         <h3 class="center">Toujours disponible pour mes clients, <br>je suis le professionnel qu'il vous faut pour réaliser vos projets.</h3>
 
     </div>
 
         <!--Div de premiere partie blanche-->
-    <div class="section partie_blanche">
+    <div class="section partie_blanche_1">
         <img class="lightbulb " src="images\lightbulb2.png" >
         <div class="col_contenu float_right">   
             <h2>Activités</h2>
@@ -58,7 +58,7 @@
         </div>
     </div>
     <!--Div de deuxieme partie grise-->
-    <div class="section partie_grise">
+    <div class="section partie_grise_2">
         <div class="center" >
             <h2>Savoir faire</h2>
             <div class="grid-container container-know-how" >
@@ -72,10 +72,7 @@
     </div>
 
     <!--Div de deuxieme partie blanche-->
-    <div class="section partie_blanche">
-        
-        
-        
+    <div class="section partie_blanche_2">
             <h2>A propos</h2>
             <div class="grid-container container-about">
                 <div>
