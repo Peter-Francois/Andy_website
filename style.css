@@ -68,6 +68,7 @@ header:before{
 }
 .menu ul li button:hover {
     background-color: var(--color_title);
+    cursor: pointer;
 }
 #contact{
     background-color: var(--color_action_button_non_hover);
@@ -262,21 +263,26 @@ div.col_contenu {
 .grid_item_know_how:hover{
     color: var(--color_action_button);
     font-size: 60px;
+    
 }
 #know_how_item1:hover{
     background: url('images/tableau_elec_3.jpg') no-repeat center/cover;
+    cursor: pointer;
     
 }
 #know_how_item2:hover{
     background: url('images/smart-home-logo.jpeg') no-repeat center;
     background-size: 100% 100%;
+    cursor: pointer;
     
 }
 #know_how_item3:hover{
     background: url('images/exterior.webp') no-repeat center/cover;
+    cursor: pointer;
 }
 #know_how_item4:hover{
     background: url('images/borne_IRVE.jpg') no-repeat center/cover;
+    cursor: pointer;
 }
 
 #andy{
