@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
 
     <!--Div de couverture-->
@@ -17,10 +18,11 @@
             <h1>E L E C +</h1>
             <nav class="menu">
                 <ul>
-                    <li><button onclick="displayHome(event)" id="home">Accueil</button></li>
-                    <li><button onclick="displayKnowHow(event)" id="know_how">Savoir faire</button></li>
-                    <li><button onclick="displayAbout(event)" id="about">A propos</button></li>
-                    <li><a id="contact" href="/contact" >Contact<i style="margin-left: 15px;" class="fa-solid fa-arrow-pointer"></i></a></li>
+                    <li><button onclick="displayHome(event)">Accueil</button></li>
+                    <li><button onclick="displayActivity(event)">Activités</button></li>
+                    <li><button onclick="displayKnowHow(event)">Savoir faire</button></li>
+                    <li><button onclick="displayAbout(event)">A propos</button></li>
+                    <li><button id="contact" onclick="displayContact(event)">Contact<i style="margin-left: 15px;" class="fa-solid fa-arrow-pointer"></i></button></li>
                 </ul>
             </nav>
         </div>
@@ -44,7 +46,7 @@
 
         <!--Div de premiere partie blanche-->
     <div class="section partie_blanche_1 grid-container">
-        <img class="lightbulb " src="images\lightbulb2.png" >
+        <img id="electrician" src="images\electrician.jpg" >
         <div class="col_contenu float_right">   
             <h3>Activités</h3>
             <div class="texte-avec-ligne-verticale ">
@@ -52,14 +54,16 @@
                     Je m'occupe de la mise en place des <strong>systèmes électriques</strong> nécessaires au bon fonctionnement des bâtiments résidentiels, commerciaux, industriels et publics. Les travaux que j'effectue vont de la <strong>conception</strong> et l’<strong>installation</strong> à la <strong>maintenance</strong> et la <strong>réparation</strong> des équipements électriques.
                 </p> 
                 <p>
-                    Grace à mes 12 années d'experience en temps que controleur d'installation, j'ai la posibilité de vous proposer des <strong>services</strong> de haute <strong>qualité</strong>.
+                    Grâce à mes 12 années d'expérience en tant que contrôleur d'installation, je suis en mesure de vous proposer des services de haute qualité.
                 </p>
                 <p>
-                    La satisfaction de mes clients est pour moi une priorité. Je suis a l'écoute de vos besoins et serais toujours à votre disposition.
+                    La satisfaction de mes clients est ma priorité. Je suis à l'écoute de vos besoins et toujours à votre disposition.
                 </p>
             </div>
             
         </div>
+        <img id="lightbulb" src="images\lightbulb2.png" >
+        
     </div>
     <!--Div de deuxieme partie grise-->
     <div class="section partie_grise_2">
@@ -93,6 +97,7 @@
                         </p> 
                     </div>
                 </div>
+                <img id="andy" src="images\IMG_20250120_121904.jpg">
             </div>
     </div>
     <!--Frame-->
@@ -105,9 +110,25 @@
         <p><a href="tel:+33778953973">0778953973</a></p>
     </div>-->
 
+    <form id="contact-form">
+        <button type="button" id="close-btn" onclick="hideContact()">&times;</button>
+        <h2 class="center">Contactez-moi</h2>
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="8" required></textarea>
+        <button type="submit" id="send-btn">Envoyer</button>
+    </form>
+
+
 
 
  
 <script src="script.js"></script>
 </body>
+<div id="overlay" style="display:none;"></div>
 </html>

@@ -15,6 +15,7 @@ body{
     margin: 0px;
     line-height: 1.5;
     color: #333333;
+    position: relative;
 }
 header{
     background: url('images/tableau_elec.jpeg') no-repeat center/cover;
@@ -32,13 +33,12 @@ header:before{
     height: 100%;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.585);
-    z-index: -1;
 }
 .compagny_name_and_menu{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 2;
     grid-template-columns: .4fr 1fr;
 }
 
@@ -95,6 +95,7 @@ h3{
     color: var(--color_title);
     font-size: 30px;
     margin-left: 0px;
+    margin-top: 0px;
     margin-bottom: 40px;
     text-shadow: rgb(91, 91, 91) 0.05em 0.05em 0.25em;
     font-family: Montserrat;
@@ -142,10 +143,10 @@ h2{
 }
 .section{
     overflow:auto;
-    padding-top: 30px;
+    padding-top: 70px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 .container-hook{
     grid-template-columns: .4fr 1fr .4fr;
@@ -161,7 +162,9 @@ h2{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.915);
 }
 .partie_blanche_1{
-    grid-template-columns: .3fr 1fr;
+    grid-template-columns: .2fr 1fr .3fr;
+    gap: 40px;
+    place-items: center;
 }
 .partie_grise_1, .partie_grise_2{
     background-color: #F5F5F5;
@@ -185,12 +188,16 @@ div.col_contenu {
     margin-top: 0;
 }
 
-.lightbulb{
-    width: 15%;
-    min-width: 150px;
-
-
-
+#lightbulb{
+    width: 50%;
+    min-width: 200px;
+}
+#electrician{
+    width: 70%;
+    min-width: 300px;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.915);
 }
 .float_right{
     float: right;
@@ -205,6 +212,7 @@ div.col_contenu {
     padding-top: 150px;
     gap: 25px;
     grid-template-columns:  1fr 1fr 1fr;
+    
 }
 
 .container-know-how{   
@@ -219,10 +227,11 @@ div.col_contenu {
 
 }
 .container-about{
-    grid-template-columns: 0.6fr 1fr;
+    grid-template-columns: 0.6fr 1fr 0.4fr;
     column-gap: 20px;
     margin: auto;
     padding: 15px;
+    place-items: center;
 }
 .grid_item{
     display: flex;
@@ -270,3 +279,77 @@ div.col_contenu {
     background: url('images/borne_IRVE.jpg') no-repeat center/cover;
 }
 
+#andy{
+    width: 20%;
+    min-width: 200px;
+}
+
+#contact-form {
+    display: none;
+    z-index: 4;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(200px, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 500px;
+}
+#contact-form h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#contact-form label {
+    font-weight: bold;
+}
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#contact-form button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#send-btn{
+    margin-top: 20px;
+    width: 100%;
+
+}
+#contact-form button:hover {
+    background: #218838;
+}
+#close-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur noire avec transparence */
+    z-index: 3; /* Doit être inférieur à celui du formulaire */
+    display: none; /* Masqué par défaut */
+}
