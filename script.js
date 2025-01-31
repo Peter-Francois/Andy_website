@@ -27,7 +27,6 @@ document.addEventListener('click', function(event) {
 });
 
 
-
 // Fonction pour afficher le haut de la page
 function displayHome(event) {
     event.preventDefault();
