@@ -54,3 +54,9 @@ function displayAbout(event) {
     const AboutDiv = document.querySelector('div.partie_blanche_2');
     AboutDiv.scrollIntoView({ behavior: 'smooth' });
 }
+
+// Fonction pour afficher le menu-content en cliquant sur le bouton
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('display_menu_mobile'); // Affiche ou masque le menu
+}

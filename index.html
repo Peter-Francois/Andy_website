@@ -13,8 +13,9 @@
 <body>
 
     <!--Div de couverture-->
-    <header>
+    <header class="center">
         <div class="compagny_name_and_menu grid-container">
+            <button onclick="toggleMenu()" type="button" id="menu_button"><i class="fa-solid fa-bars"></i></button>
             <h1>E L E C +</h1>
             <nav class="menu">
                 <ul>
@@ -36,7 +37,7 @@
 
     <!--Div de premiere partie grise-->
     <div class="section partie_grise_1 ">
-        <div class="separateur"></div>
+        <div class="separateur display_desktop"></div>
         <div class="grid-container container-hook">
             <img class="hook-pictures" src="images\phone.png" >
             <p class="center">" Toujours disponible pour mes clients, <br>je suis le professionnel qu'il vous faut pour réaliser vos projets. "</p>
@@ -62,7 +63,7 @@
             </div>
             
         </div>
-        <img id="lightbulb" src="images\lightbulb2.png" >
+        <img id="lightbulb" class="display_desktop" src="images\lightbulb2.png" >
         
     </div>
     <!--Div de deuxieme partie grise-->
