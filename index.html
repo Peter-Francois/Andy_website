@@ -15,15 +15,15 @@
     <!--Div de couverture-->
     <header class="center">
         <div class="compagny_name_and_menu grid-container">
-            <button onclick="toggleMenu()" type="button" id="menu_button"><i class="fa-solid fa-bars"></i></button>
+            <button onclick="toggleMenu()" type="button" title="Menu" id="menu_button"><i class="fa-solid fa-bars"></i></button>
             <h1>E L E C +</h1>
             <nav class="menu">
                 <ul>
-                    <li><button onclick="displayHome(event)">Accueil</button></li>
-                    <li><button onclick="displayActivity(event)">Activités</button></li>
-                    <li><button onclick="displayKnowHow(event)">Savoir faire</button></li>
-                    <li><button onclick="displayAbout(event)">A propos</button></li>
-                    <li><button id="contact" onclick="displayContact(event)">Contact<i class="fa-solid fa-arrow-pointer"></i></button></li>
+                    <li><button type="button" title="Accueil" onclick="displayHome(event)">Accueil</button></li>
+                    <li><button type="button" title="Activités" onclick="displayActivity(event)">Activités</button></li>
+                    <li><button type="button" title="Savoir faire" onclick="displayKnowHow(event)">Savoir faire</button></li>
+                    <li><button type="button" title="A propos" onclick="displayAbout(event)">A propos</button></li>
+                    <li><button type="button" title="Contact" id="contact" onclick="displayContact(event)">Contact<i class="fa-solid fa-arrow-pointer"></i></button></li>
                 </ul>
             </nav>
         </div>

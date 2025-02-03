@@ -135,11 +135,12 @@ body{
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 2;
+        z-index: 3;
         grid-template-columns: .4fr 1fr;
     }
 
     /*Menu*/
+
 
         #menu_button{
             display: none;
@@ -149,8 +150,8 @@ body{
             list-style: none;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             display: flex;
+            box-sizing: border-box;
             align-content: flex-start;
             background-color:var(--color_title_non_hover) ;
         }
@@ -445,19 +446,13 @@ body{
         }
 
 
-        .menu ul{
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            display: flex;
-            align-content: flex-start;
-            background-color:var(--color_title_non_hover) ;
+        .menu_mobile{  
+            display: block;
         }
 
-        .menu ul li {
-            flex-grow: 1;
-            height: 65px;
+        .menu_mobile ul{
+            display: flex;
+            flex-direction: column
         }
 
         .menu ul li button , #contact{
