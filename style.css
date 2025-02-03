@@ -542,3 +542,13 @@ body{
             margin-bottom: 20px;
         }
     }
+
+@media (max-width: 1000px){
+    
+    .partie_blanche_1{
+        grid-template-columns: .2fr 1fr ;
+    }
+    .display_1000px{
+        display: none;
+    }
+}
