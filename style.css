@@ -182,6 +182,10 @@ body{
             font-weight: bold;
         }
 
+        .fa-arrow-pointer{
+            margin-left: 15px;
+        }
+
         #contact:hover{
             background-color: var(--color_action_button);
         }
