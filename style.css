@@ -178,6 +178,16 @@ body{
             cursor: pointer;
         }
 
+        .logo_danger_electricite{
+            height: 75px;
+            z-index: 1;
+            align-self: center;
+        }
+        #logo_danger_electricite_1{
+            justify-self: end;
+
+        }
+
         #contact{
             background-color: var(--color_action_button_non_hover);
             font-weight: bold;
@@ -201,14 +211,7 @@ body{
             margin-bottom: 10px;
 
         }
-        .logo_danger_electricite{
-            height: 75px;
-            z-index: 1;
-        }
-        #logo_danger_electricite_1{
-            justify-self: end;
 
-        }
         .container-hook{
             grid-template-columns: .4fr 1fr .4fr;
             gap: 30px;
@@ -301,6 +304,8 @@ body{
             padding: 15px;
             place-items: center;
         }
+
+
 
         #andy{
             width: 20%;
@@ -412,7 +417,7 @@ body{
     }
 
     .cover_container{
-        padding-top: 100px;
+        padding-top: 90px;
  
     }
     h1{
@@ -445,6 +450,10 @@ body{
             grid-column: span 2;
         }
 
+        .logo_danger_electricite{
+            height: 65px;
+        }
+
 
         .menu_mobile{  
             display: block;
@@ -455,160 +464,73 @@ body{
             flex-direction: column
         }
 
-        .menu ul li button , #contact{
-            display: block;
-            padding: 7.5px 10px;
-            width: 100%;
-            height: 100%;
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            background-color: transparent;
-            border: none;
-        }
-
-        .menu ul li button:hover {
-            background-color: var(--color_title);
-            cursor: pointer;
-        }
-
-        #contact{
-            background-color: var(--color_action_button_non_hover);
-            font-weight: bold;
-        }
-
-        #contact:hover{
-            background-color: var(--color_action_button);
-        }
-
     /*Hook*/
 
         div.container-hook p{
-            color: var(--color_title);
-            font-size: 20px;
-            text-shadow: rgb(91, 91, 91) 0.1em 0.1em 0.2em;
-            font-family: Montserrat;
-            margin-bottom: 10px;
+            font-size: 16px;
 
         }
-        .logo_danger_electricite{
-            height: 75px;
-            z-index: 1;
-        }
-        #logo_danger_electricite_1{
-            justify-self: end;
 
-        }
         .container-hook{
-            grid-template-columns: .4fr 1fr .4fr;
-            gap: 30px;
-            place-items: center;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        .hook-pictures{
-            height: 200px;
-            border-radius: 100px;
-            border: 1px solid #000000;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.915);
+            grid-template-columns: 1fr;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
 
     /*Activity*/
 
         .partie_blanche_1{
-            grid-template-columns: .2fr 1fr .3fr;
-            gap: 40px;
-            place-items: center;
+            grid-template-columns: .15fr 1fr ;
+            gap: 20px;
         }
 
         #electrician{
-            width: 70%;
-            min-width: 300px;
-            border-radius: 30px;
-            border: 1px solid #000000;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.915);
+            min-width: 140px;
         }
 
 
 
     /*know how*/
 
-        .container-know-how{   
-            gap: 15px;
-            max-width: 1100px;
-            grid-template-columns: repeat(2, 1fr);
-            background-color: #00284fd0;
-            border-radius: 30px;
-            box-shadow: 15px 15px 5px grey;  
-            margin: auto;
-            padding: 15px;
+        .container-know-how{
+            grid-template-columns: repeat(1, 1fr);
         }
 
         .item_know_how{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            border: solid black 1px;
-            border-radius: 20px;
-            height: 200px; 
-            font-size: 50px;
-            font-weight: bold;
-            color:rgb(255, 255, 255); 
-            text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.075em;
-        }
-
-        #know_how_item1:hover{
-            background: url('images/tableau_elec_3.jpg') no-repeat center/cover;
-        }
-
-        #know_how_item2:hover{
-            background: url('images/smart-home-logo.jpeg') no-repeat center;
-            background-size: 100% 100%;
-        }
-
-        #know_how_item3:hover{
-            background: url('images/exterior.webp') no-repeat center/cover;
-        }
-
-        #know_how_item4:hover{
-            background: url('images/borne_IRVE.jpg') no-repeat center/cover;
+            height: 250px; 
+            font-size: 35px;
         }
 
     /*About*/
 
         div.partie_blanche_2 h3{
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .container-about{
-            grid-template-columns: 0.6fr 1fr 0.4fr;
-            column-gap: 20px;
-            margin: auto;
-            padding: 15px;
-            place-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            justify-items: left;
         }
 
-        #andy{
-            width: 20%;
-            min-width: 200px;
+        #about_item1{
+            height: 140px;
         }
+
+        #about_item2{
+            height: 200px;
+        }
+
 
     /*Contact*/
 
         #contact-form {
-            display: none;
-            z-index: 4;
-            position: fixed;
-            top: 50%;
-            right: 50%;
-            transform: translate(200px, -50%);
-            background: white;
+            transform: translate(10em, -50%);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
-            height: 500px;
+            width: 20em;
+            height: 30em;
         }
 
         #contact-form h2 {
