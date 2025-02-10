@@ -32,7 +32,7 @@ This is a professional website in French for an electrician, designed to showcas
 
 ## 📩 Contact
 
-For any inquiries, please visit the **📞 Contact** page on the website or reach out via email or phone.
+For any inquiries, please visit the **📞 Contact** page on the website.
 
 ## 📜 License
 
