@@ -2,7 +2,7 @@
 
 ## 📝 Overview
 
-This is a professional website for an electrician, designed to showcase activity, skills, qualifications, and contact information for potential clients. It helps increase online visibility and expand the customer network.
+This is a professional website in French for an electrician, designed to showcase activity, skills, qualifications, and contact information for potential clients. It helps increase online visibility and expand the customer network. The website is responsive and adapts seamlessly to all screen sizes.
 
 ## 🚀 Features
 
@@ -17,13 +17,14 @@ This is a professional website for an electrician, designed to showcase activity
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Peter-Francois/Andy_website
    ```
 2. Navigate to the project folder:
    ```bash
-   cd electrician-website
+   cd Andy_website
+
    ```
-3. Open `index.html` in a browser or deploy using a hosting service.
+3. Open `index.html` in a browser.
 
 ## 🛠 Technologies Used
 
