@@ -17,7 +17,7 @@ This is a professional website in French for an electrician, designed to showcas
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Peter-Francois/Andy_website
+   git clone https://github.com/Peter-Francois/Andy_website.git
    ```
 2. Navigate to the project folder:
    ```bash
